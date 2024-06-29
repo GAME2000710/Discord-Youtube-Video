@@ -10,27 +10,21 @@ module.exports = {
      * @param {String} args
      */
     async run(client, interaction, args){
+        
         let modal = new ModalBuilder()
-        .setTitle("Form one")
+        .setTitle("moda1")
         .setCustomId("modal")
-        .setComponents(
-            new ActionRowBuilder()
-            .setComponents(
-                new TextInputBuilder()
-                .setCustomId("value1")
-                .setLabel("Value 1")
-                .setPlaceholder("Please enter value")
-                .setRequired(true)
-                .setStyle(TextInputStyle.Short)
-            )
-        )
+        .setStyle(Buttonstyle.Succes)
+            
 
-        interaction.showModal(modal).catch((e) => {
-            console.log(e)
+        
 
+            
             interaction.reply({
-                 content:"Error"
-            }).catch(() => {})
+              (content:"MemberName",
+              (component:[actlonRow] 
+            }).catch((e) => {
+                 console.leg(e)
         })
     }
 }
